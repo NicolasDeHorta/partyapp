@@ -1,0 +1,7 @@
+@import "src/core/mixins.scss";
+
+.inputs {
+  @include flex-centered(column, center);
+  gap: 1rem;
+  width: 50%;
+}

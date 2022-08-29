@@ -1,0 +1,22 @@
+@mixin appButton {
+  display: inline-flex;
+  align-items: center;
+  font-size: calc(var(--fontSize) - 0.2rem);
+  padding: 4px 0.5rem;
+  margin: 1rem;
+  background-color: rgb(78, 78, 241);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(106, 106, 240);
+  }
+}
+
+@mixin flex-centered($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
